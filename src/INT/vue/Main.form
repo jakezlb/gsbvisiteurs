@@ -31,14 +31,16 @@
               <EmptySpace max="32767" attributes="0"/>
               <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="jText_Login" max="32767" attributes="0"/>
-                  <Component id="jText_Mdp" alignment="0" max="32767" attributes="0"/>
-                  <Component id="jButton_BTN_Connect" pref="97" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="jText_Login" max="32767" attributes="0"/>
+                      <Component id="jText_Mdp" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Component id="jButton_BTN_Connect" min="-2" pref="108" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>

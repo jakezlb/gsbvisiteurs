@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package INT.interfaces;
+package INT.vue;
 
 /**
  *
@@ -38,7 +38,7 @@ public class Visites extends javax.swing.JPanel {
         jButton_BTN_Suivant = new javax.swing.JButton();
         jButton_BTN_Nouveau = new javax.swing.JButton();
         jText_Num_Rapport = new javax.swing.JTextField();
-        jComboBox_Particien = new javax.swing.JComboBox<>();
+        jComboBox_Particien = new javax.swing.JComboBox<String>();
         jDateChooser_Date_Rapport = new com.toedter.calendar.JDateChooser();
         jTextField_Motif_Visite = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
@@ -81,7 +81,7 @@ public class Visites extends javax.swing.JPanel {
             }
         });
 
-        jComboBox_Particien.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox_Particien.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jLabel7.setText("Bilan");
 

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package INT.interfaces;
+package INT.vue;
 
 /**
  *
@@ -64,13 +64,14 @@ public class Main extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel4)
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel1)
-                    .addComponent(jText_Login)
-                    .addComponent(jText_Mdp)
-                    .addComponent(jButton_BTN_Connect, javax.swing.GroupLayout.DEFAULT_SIZE, 97, Short.MAX_VALUE))
-                .addGap(19, 19, 19))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jLabel2)
+                        .addComponent(jLabel1)
+                        .addComponent(jText_Login)
+                        .addComponent(jText_Mdp))
+                    .addComponent(jButton_BTN_Connect, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
