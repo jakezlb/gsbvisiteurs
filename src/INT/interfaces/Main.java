@@ -8,6 +8,7 @@ package INT.interfaces;
 /**
  *
  * @author Chewbaka
+ * 
  */
 public class Main extends javax.swing.JFrame {
 
