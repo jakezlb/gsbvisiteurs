@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package INT.interfaces;
+package INT.vue;
 
 /**
  *
@@ -76,7 +76,7 @@ public class Menu extends javax.swing.JPanel {
                             .addComponent(jButton_BTN_Praticien, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton_BTN_Medicament, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addComponent(jButton_BTN_Quitter, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 363, Short.MAX_VALUE))
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 363, Short.MAX_VALUE))
                 .addContainerGap(20, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(

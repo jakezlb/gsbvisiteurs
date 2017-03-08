@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package INT.interfaces;
+package INT.vue;
 
 /**
  *
@@ -47,8 +47,8 @@ public class Visiteurs extends javax.swing.JPanel {
         jText_Adresse = new javax.swing.JTextField();
         jText_CP = new javax.swing.JTextField();
         jText_Ville = new javax.swing.JTextField();
-        jComboBox_Secteur = new javax.swing.JComboBox<>();
-        jComboBox_Labo = new javax.swing.JComboBox<>();
+        jComboBox_Secteur = new javax.swing.JComboBox<String>();
+        jComboBox_Labo = new javax.swing.JComboBox<String>();
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/INT/images/GSB.png"))); // NOI18N
 
@@ -89,9 +89,9 @@ public class Visiteurs extends javax.swing.JPanel {
             }
         });
 
-        jComboBox_Secteur.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox_Secteur.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        jComboBox_Labo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox_Labo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
