@@ -111,7 +111,13 @@ public class VisiteurDAO {
         }
         return lesVisiteurs;
     }
-
+    /**
+     * Extraction de tous les visiteurs, ordonnées
+     * @param cleTri 1=>ID ; 2=>NOM
+     * @param ordreTri 1=>ASC ; 2=>DESC
+     * @return collection des visiteurs
+     * @throws SQLException 
+     */
     public static List<Visiteur> selectAll(int cleTri, int ordreTri) throws SQLException {
         List<Visiteur> lesVisiteurs = new ArrayList<Visiteur>();
         Visiteur unVisiteur;
@@ -153,4 +159,5 @@ public class VisiteurDAO {
         }
         return lesVisiteurs;
     }
+    
 }
