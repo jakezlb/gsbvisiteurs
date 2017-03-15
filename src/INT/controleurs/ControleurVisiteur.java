@@ -16,7 +16,22 @@ public class ControleurVisiteur implements WindowListener, ActionListener{
     
     
     private Visiteurs vue;
-
+    private ControleurPrincipal ctrlPrincipal;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+//    ACCESSEURS et MUTATEURS
     public Visiteurs getVue() {
         return vue;
     }
@@ -25,7 +40,7 @@ public class ControleurVisiteur implements WindowListener, ActionListener{
         this.vue = vue;
     }
     
-    
+//    REACTIONS EVENEMENTIELLES
     @Override
     public void windowOpened(WindowEvent e) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

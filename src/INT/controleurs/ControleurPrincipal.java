@@ -10,11 +10,21 @@ package INT.controleurs;
  * @author btssio
  */
 public class ControleurPrincipal {
-    private ControleurVisiteur ctrlVisiteur;
+    
+    ControleurVisiteur ctrlVisiteur;
     
     public void afficherLesVisiteurs(){
-        this.ctrlVisiteur.getVue().setVisible(false);
         this.ctrlVisiteur.getVue().setVisible(true);
     }
+    
+    public ControleurVisiteur getCtrlVisiteur(){
+        return ctrlVisiteur;
+    }
+    
+    public void setControleurVisiteur(ControleurVisiteur ctrlVisiteur) {
+        this.ctrlVisiteur = ctrlVisiteur;
+    }
+    
+    
     
 }
