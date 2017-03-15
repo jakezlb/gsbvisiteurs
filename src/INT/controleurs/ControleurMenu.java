@@ -5,26 +5,26 @@
  */
 package INT.controleurs;
 import java.awt.event.*;
-import INT.vue.Visiteurs;
+import INT.vue.Menu;
 
 
 /**
  *
  * @author btssio
  */
-public class ControleurVisiteur implements WindowListener, ActionListener{
+public class ControleurMenu implements WindowListener, ActionListener{
     
     
-    private Visiteurs vue;
+    private Menu menu;
     private ControleurPrincipal ctrlPrincipal;
     
 //    ACCESSEURS et MUTATEURS
-    public Visiteurs getVue() {
-        return vue;
+    public Menu getVue() {
+        return menu;
     }
 
-    public void setVue(Visiteurs vue) {
-        this.vue = vue;
+    public void setVue(Menu menu) {
+        this.menu = menu;
     }
     
 //    REACTIONS EVENEMENTIELLES
