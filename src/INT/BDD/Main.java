@@ -22,20 +22,16 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Jdbc.creer("com.mysql.jdbc.Driver", "jdbc:mysql:", "//localhost/", "xe", "gsb", "gsb");
+//               Jdbc.creer("oracle.jdbc.driver.OracleDriver","jdbc:oracle:thin:","@localhost:1521:","orcl","gsb", "gsb");
+       Jdbc.creer("oracle.jdbc.driver.OracleDriver","jdbc:oracle:thin:","@localhost:1521:","xe","GSB_LOCAL", "gsb");
         try {
             Jdbc.getInstance().connecter();
+            JOptionPane.showMessageDialog(null, "connexion réussie");
         } catch (ClassNotFoundException ex) {
             JOptionPane.showMessageDialog(null, "Main - classe JDBC non trouvée");
         } catch (SQLException ex) {
             JOptionPane.showMessageDialog(null, "Main - échec de connexionn");
         }
     }
-    
-    ControleurPrincipal leControleurPrincipal = new ControleurPrincipal();
-  
-    
-    
-    
-    
+   
 }
