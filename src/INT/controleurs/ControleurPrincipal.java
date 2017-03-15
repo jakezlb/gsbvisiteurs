@@ -20,7 +20,13 @@ public class ControleurPrincipal {
         this.ctrlMenu.getVue().setVisible(false);
         this.ctrlVisiteur.getVue().setVisible(true);
     }
+     
+    public void afficherMenu() {
+        this.ctrlMenu.getVue().setVisible(true);
+        this.ctrlVisiteur.getVue().setVisible(false);
+    }
     
+    // ACCESSEURS ET MUTATEURS
     public ControleurVisiteur getCtrlVisiteur(){
         return ctrlVisiteur;
     }
@@ -28,12 +34,16 @@ public class ControleurPrincipal {
     public void setControleurVisiteur(ControleurVisiteur ctrlVisiteur) {
         this.ctrlVisiteur = ctrlVisiteur;
     }
-    
-    public void afficherMenu() {
-        this.ctrlMenu.getVue().setVisible(true);
-        this.ctrlVisiteur.getVue().setVisible(false);
+   
+    public ControleurMenu getCtrlMenu() {
+        return ctrlMenu;
     }
     
+    public void setControleurMenu(ControleurMenu ctrlMenu) {
+        this.ctrlMenu = ctrlMenu;
+    }
+    
+    // QUITTER L'APPLICATION
     public void quitterApplication() {
         // Confirmer avant de quitter
         int rep = JOptionPane.showConfirmDialog(null, "Quitter l'application\nEtes-vous sûr(e) ?", "GSB", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
