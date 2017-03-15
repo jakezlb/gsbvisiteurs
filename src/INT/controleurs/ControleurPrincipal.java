@@ -5,6 +5,8 @@
  */
 package INT.controleurs;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author btssio
@@ -12,8 +14,10 @@ package INT.controleurs;
 public class ControleurPrincipal {
     
     ControleurVisiteur ctrlVisiteur;
+    ControleurMenu ctrlMenu;
     
     public void afficherLesVisiteurs(){
+        this.ctrlMenu.getVue().setVisible(false);
         this.ctrlVisiteur.getVue().setVisible(true);
     }
     
@@ -25,6 +29,19 @@ public class ControleurPrincipal {
         this.ctrlVisiteur = ctrlVisiteur;
     }
     
+    public void afficherMenu() {
+        this.ctrlMenu.getVue().setVisible(true);
+        this.ctrlVisiteur.getVue().setVisible(false);
+    }
+    
+    public void quitterApplication() {
+        // Confirmer avant de quitter
+        int rep = JOptionPane.showConfirmDialog(null, "Quitter l'application\nEtes-vous sûr(e) ?", "GSB", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+        if (rep == JOptionPane.YES_OPTION) {
+            // mettre fin à l'application
+            System.exit(0);
+        }
+    }
     
     
 }
