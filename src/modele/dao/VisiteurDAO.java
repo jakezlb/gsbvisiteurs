@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package INT.DAO;
+package modele.dao;
 
-import INT.modele.DAO.Jdbc;
+import modele.dao.Jdbc;
 import java.sql.PreparedStatement;
 import java.sql.*;
 import java.util.ArrayList;
-import INT.modele.Metier.Visiteur;
+import modele.metier.Visiteur;
 import java.util.List;
 
 /**
@@ -160,4 +160,16 @@ public class VisiteurDAO {
         return lesVisiteurs;
     }
     
+    public static boolean connexionUser(String nom, String mdp) throws SQLException {
+        ResultSet rs;
+        PreparedStatement pstmt;
+        Jdbc jdbc = Jdbc.getInstance();
+        // préparer la requête
+        String requete = "SELECT * FROM VISITEUR WHERE VIS_NOM = ? AND VIS_DATEEMBAUCHE = ?";
+        pstmt = jdbc.getConnexion().prepareStatement(requete);
+        pstmt.setString(1, nom);
+        pstmt.setString(2, mdp);
+        rs = pstmt.executeQuery();
+        return rs.first();
+    }
 }

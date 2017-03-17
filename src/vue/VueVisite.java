@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package INT.vue;
+package vue;
 
 /**
  *
  * @author ChewbakaS
  */
-public class Visites extends javax.swing.JPanel {
+public class VueVisite extends javax.swing.JPanel {
 
     /**
      * Creates new form Visites
      */
-    public Visites() {
+    public VueVisite() {
         initComponents();
     }
 

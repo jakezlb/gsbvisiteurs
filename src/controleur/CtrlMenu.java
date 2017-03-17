@@ -3,28 +3,28 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package INT.controleurs;
+package controleur;
 import java.awt.event.*;
-import INT.vue.Visiteurs;
+import vue.VueMenu;
 
 
 /**
  *
  * @author btssio
  */
-public class ControleurVisiteur implements WindowListener, ActionListener{
+public class CtrlMenu implements WindowListener, ActionListener{
     
     
-    private Visiteurs vue;
-    private ControleurPrincipal ctrlPrincipal;
+    private VueMenu menu;
+    private CtrlPrincipal ctrlPrincipal;
     
 //    ACCESSEURS et MUTATEURS
-    public Visiteurs getVue() {
-        return vue;
+    public VueMenu getVue() {
+        return menu;
     }
 
-    public void setVue(Visiteurs vue) {
-        this.vue = vue;
+    public void setVue(VueMenu menu) {
+        this.menu = menu;
     }
     
 //    REACTIONS EVENEMENTIELLES

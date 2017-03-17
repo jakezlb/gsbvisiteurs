@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package INT.DAO;
+package modele.dao;
 
 /**
  *
  * @author Jakez
  */
-public class LaboDAO {
+public class SecteurDAO {
     
 }

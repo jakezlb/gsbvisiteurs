@@ -3,18 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package INT.vue;
+package vue;
+
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JTextField;
 
 /**
  *
- * @author ChewbakaS
+ * @author btssio
  */
-public class Visiteurs extends javax.swing.JPanel {
+public class VueVisiteur extends javax.swing.JFrame {
 
     /**
-     * Creates new form Visiteurs
+     * Creates new form NewJFrame
      */
-    public Visiteurs() {
+    public VueVisiteur() {
         initComponents();
     }
 
@@ -27,52 +31,40 @@ public class Visiteurs extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jTextField_Chercher = new javax.swing.JTextField();
-        jButton_BTN_OK = new javax.swing.JButton();
-        jSeparator1 = new javax.swing.JSeparator();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jButton_BTN_Precedent = new javax.swing.JButton();
+        jText_Adresse = new javax.swing.JTextField();
+        jComboBox_Secteur = new javax.swing.JComboBox<String>();
+        jText_Nom = new javax.swing.JTextField();
+        jComboBox_Labo = new javax.swing.JComboBox<String>();
+        jText_Prenom = new javax.swing.JTextField();
         jButton_BTN_Suivant = new javax.swing.JButton();
         jButton_BTN_Quitter = new javax.swing.JButton();
-        jText_Nom = new javax.swing.JTextField();
-        jText_Prenom = new javax.swing.JTextField();
-        jText_Adresse = new javax.swing.JTextField();
-        jText_CP = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
+        jButton_BTN_Precedent = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
         jText_Ville = new javax.swing.JTextField();
-        jComboBox_Secteur = new javax.swing.JComboBox<String>();
-        jComboBox_Labo = new javax.swing.JComboBox<String>();
+        jLabel2 = new javax.swing.JLabel();
+        jText_CP = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
+        jButton_BTN_OK = new javax.swing.JButton();
+        jTextField_Chercher = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/INT/images/GSB.png"))); // NOI18N
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel2.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("VISITEURS");
+        jComboBox_Secteur.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        jLabel3.setText("Chercher");
+        jText_Nom.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jText_NomActionPerformed(evt);
+            }
+        });
 
-        jButton_BTN_OK.setText("OK");
-
-        jLabel4.setText("NOM");
-
-        jLabel5.setText("PRENOM");
-
-        jLabel6.setText("ADRESSE");
-
-        jLabel7.setText("VILLE");
-
-        jLabel8.setText("SECTEUR");
-
-        jLabel9.setText("LABOLATOIRE");
-
-        jButton_BTN_Precedent.setText("Précédent");
+        jComboBox_Labo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jButton_BTN_Suivant.setText("Suivant");
 
@@ -83,18 +75,32 @@ public class Visiteurs extends javax.swing.JPanel {
             }
         });
 
-        jText_Nom.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jText_NomActionPerformed(evt);
-            }
-        });
+        jLabel9.setText("LABOLATOIRE");
 
-        jComboBox_Secteur.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jButton_BTN_Precedent.setText("Précédent");
 
-        jComboBox_Labo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jLabel7.setText("VILLE");
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
+        jLabel8.setText("SECTEUR");
+
+        jLabel2.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("VISITEURS");
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/GSB.png"))); // NOI18N
+
+        jLabel6.setText("ADRESSE");
+
+        jButton_BTN_OK.setText("OK");
+
+        jLabel3.setText("Chercher");
+
+        jLabel5.setText("PRENOM");
+
+        jLabel4.setText("NOM");
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -141,7 +147,7 @@ public class Visiteurs extends javax.swing.JPanel {
                         .addComponent(jTextField_Chercher, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(37, 37, 37)
                         .addComponent(jButton_BTN_OK)
-                        .addGap(0, 51, Short.MAX_VALUE))))
+                        .addGap(0, 60, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -190,16 +196,101 @@ public class Visiteurs extends javax.swing.JPanel {
                     .addComponent(jButton_BTN_Quitter))
                 .addContainerGap())
         );
-    }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton_BTN_QuitterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_BTN_QuitterActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_BTN_QuitterActionPerformed
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
 
     private void jText_NomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jText_NomActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jText_NomActionPerformed
 
+    private void jButton_BTN_QuitterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_BTN_QuitterActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton_BTN_QuitterActionPerformed
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(VueVisiteur.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(VueVisiteur.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(VueVisiteur.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(VueVisiteur.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new VueVisiteur().setVisible(true);
+            }
+        });
+    }
+
+    public JButton getjButton_BTN_OK() {
+        return jButton_BTN_OK;
+    }
+
+    public JButton getjButton_BTN_Precedent() {
+        return jButton_BTN_Precedent;
+    }
+
+    public JButton getjButton_BTN_Quitter() {
+        return jButton_BTN_Quitter;
+    }
+
+    public JButton getjButton_BTN_Suivant() {
+        return jButton_BTN_Suivant;
+    }
+
+    public JComboBox<String> getjComboBox_Labo() {
+        return jComboBox_Labo;
+    }
+
+    public JComboBox<String> getjComboBox_Secteur() {
+        return jComboBox_Secteur;
+    }
+
+    public JTextField getjTextField_Chercher() {
+        return jTextField_Chercher;
+    }
+
+    public JTextField getjText_Adresse() {
+        return jText_Adresse;
+    }
+
+    public JTextField getjText_CP() {
+        return jText_CP;
+    }
+
+    public JTextField getjText_Nom() {
+        return jText_Nom;
+    }
+
+    public JTextField getjText_Prenom() {
+        return jText_Prenom;
+    }
+
+    public JTextField getjText_Ville() {
+        return jText_Ville;
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton_BTN_OK;
