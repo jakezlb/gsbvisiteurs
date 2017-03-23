@@ -8,18 +8,21 @@ package vue;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JTextField;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
  * @author btssio
  */
 public class VueVisiteur extends javax.swing.JFrame {
+    private DefaultTableModel modeleTableVisiteurs;
 
     /**
      * Creates new form NewJFrame
      */
     public VueVisiteur() {
         initComponents();
+        modeleTableVisiteurs = new DefaultTableModel();
     }
 
     /**
@@ -49,10 +52,10 @@ public class VueVisiteur extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jButton_BTN_OK = new javax.swing.JButton();
-        jTextField_Chercher = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jComboBoxChercher = new javax.swing.JComboBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -99,6 +102,8 @@ public class VueVisiteur extends javax.swing.JFrame {
 
         jLabel4.setText("NOM");
 
+        jComboBoxChercher.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -143,9 +148,9 @@ public class VueVisiteur extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(15, 15, 15)
                         .addComponent(jLabel3)
-                        .addGap(36, 36, 36)
-                        .addComponent(jTextField_Chercher, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(37, 37, 37)
+                        .addGap(66, 66, 66)
+                        .addComponent(jComboBoxChercher, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(116, 116, 116)
                         .addComponent(jButton_BTN_OK)
                         .addGap(0, 60, Short.MAX_VALUE))))
         );
@@ -158,8 +163,8 @@ public class VueVisiteur extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel3)
-                            .addComponent(jTextField_Chercher, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton_BTN_OK))
+                            .addComponent(jButton_BTN_OK)
+                            .addComponent(jComboBoxChercher, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -243,6 +248,10 @@ public class VueVisiteur extends javax.swing.JFrame {
             }
         });
     }
+    
+    public DefaultTableModel getModeleTableVisiteurs() {
+        return modeleTableVisiteurs;
+    }
 
     public JButton getjButton_BTN_OK() {
         return jButton_BTN_OK;
@@ -268,8 +277,8 @@ public class VueVisiteur extends javax.swing.JFrame {
         return jComboBox_Secteur;
     }
 
-    public JTextField getjTextField_Chercher() {
-        return jTextField_Chercher;
+    public JComboBox<String> getjComboBoxChercher() {
+        return jComboBoxChercher;
     }
 
     public JTextField getjText_Adresse() {
@@ -297,6 +306,7 @@ public class VueVisiteur extends javax.swing.JFrame {
     private javax.swing.JButton jButton_BTN_Precedent;
     private javax.swing.JButton jButton_BTN_Quitter;
     private javax.swing.JButton jButton_BTN_Suivant;
+    private javax.swing.JComboBox jComboBoxChercher;
     private javax.swing.JComboBox<String> jComboBox_Labo;
     private javax.swing.JComboBox<String> jComboBox_Secteur;
     private javax.swing.JLabel jLabel1;
@@ -309,7 +319,6 @@ public class VueVisiteur extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JTextField jTextField_Chercher;
     private javax.swing.JTextField jText_Adresse;
     private javax.swing.JTextField jText_CP;
     private javax.swing.JTextField jText_Nom;

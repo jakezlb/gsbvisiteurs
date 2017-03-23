@@ -108,21 +108,6 @@ public class CtrlPrincipal implements WindowListener, ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent ae) {
-        if (ae.getSource().equals(vue.getjButton_BTN_Connect())){
-            String nom = vue.getjText_Login().getText();
-            String password = vue.getjText_Mdp().getText();
-            try {
-                if(VisiteurDAO.connexionUser(nom, password)){
-                    this.ctrlMenu.getVue().setVisible(true);
-                    this.ctrlVisiteur.getVue().setVisible(false);
-                    //afficherMenu();
-                }
-            } catch (SQLException ex) {
-                Logger.getLogger(CtrlPrincipal.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        } else{
-            System.out.println("dans la merde");
-        }
     }
     
     

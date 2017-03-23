@@ -1,38 +1,66 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package modele.metier;
 
+import java.io.Serializable;
+
 /**
+ * Classe représentant les secteurs
  *
- * @author Jakez
+ * @author jlebars
+ *
  */
-public class Secteur {
+public class Secteur implements Serializable {
 
-    private String code;
-    private String libelle;
+    private String codeSecteur;
+    private String libelleSecteur;
 
-    public Secteur(String code, String libelle) {
-        this.code = code;
-        this.libelle = libelle;
-    }
-    
-    public String getCode() {
-        return code;
-    }
-
-    public String getLibelle() {
-        return libelle;
+    /**
+     *
+     * @param codeSecteur
+     * @param libelleSecteur
+     */
+    public Secteur(String codeSecteur, String libelleSecteur) {
+        this.codeSecteur = codeSecteur;
+        this.libelleSecteur = libelleSecteur;
     }
 
-    public void setCode(String code) {
-        this.code = code;
+    /**
+     *
+     * @return
+     */
+    public String getCodeSecteur() {
+        return codeSecteur;
     }
 
-    public void setLibelle(String libelle) {
-        this.libelle = libelle;
+    /**
+     *
+     * @param codeSecteur
+     */
+    public void setCodeSecteur(String codeSecteur) {
+        this.codeSecteur = codeSecteur;
     }
 
+    /**
+     *
+     * @return
+     */
+    public String getLibelleSecteur() {
+        return libelleSecteur;
+    }
+
+    /**
+     *
+     * @param libelleSecteur
+     */
+    public void setLibelleSecteur(String libelleSecteur) {
+        this.libelleSecteur = libelleSecteur;
+    }
+
+    /**
+     *
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "Secteur{" + "codeSecteur=" + codeSecteur + ", libelleSecteur=" + libelleSecteur + '}';
+    }
 }

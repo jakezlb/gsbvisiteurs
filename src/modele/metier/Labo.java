@@ -1,48 +1,85 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package modele.metier;
 
+import java.io.Serializable;
+
 /**
+ * Classe représentant les laboratoires
  *
- * @author Jakez
+ * @author jlebars
+ *
  */
-public class Labo {
+public class Labo implements Serializable {
 
-    private String code;
-    private String nom;
-    private String chefVente;
+    private String codeLaboratoire;
+    private String nomLaboratoire;
+    private String chefDeVente;
 
-    public Labo(String code, String nom, String chefVente) {
-        this.code = code;
-        this.nom = nom;
-        this.chefVente = chefVente;
+    /**
+     *
+     * @param codeLaboratoire
+     * @param nomLaboratoire
+     * @param chefDeVente
+     */
+    public Labo(String codeLaboratoire, String nomLaboratoire, String chefDeVente) {
+        this.codeLaboratoire = codeLaboratoire;
+        this.nomLaboratoire = nomLaboratoire;
+        this.chefDeVente = chefDeVente;
     }
 
-    public String getCode() {
-        return code;
+    /**
+     *
+     * @return
+     */
+    public String getCodeLaboratoire() {
+        return codeLaboratoire;
     }
 
-    public String getNom() {
-        return nom;
+    /**
+     *
+     * @param codeLaboratoire
+     */
+    public void setCodeLaboratoire(String codeLaboratoire) {
+        this.codeLaboratoire = codeLaboratoire;
     }
 
-    public String getChefVente() {
-        return chefVente;
+    /**
+     *
+     * @return
+     */
+    public String getNomLaboratoire() {
+        return nomLaboratoire;
     }
 
-    public void setCode(String code) {
-        this.code = code;
+    /**
+     *
+     * @param nomLaboratoire
+     */
+    public void setNomLaboratoire(String nomLaboratoire) {
+        this.nomLaboratoire = nomLaboratoire;
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
+    /**
+     *
+     * @return
+     */
+    public String getChefDeVente() {
+        return chefDeVente;
     }
 
-    public void setChefVente(String chefVente) {
-        this.chefVente = chefVente;
+    /**
+     *
+     * @param chefDeVente
+     */
+    public void setChefDeVente(String chefDeVente) {
+        this.chefDeVente = chefDeVente;
     }
 
+    /**
+     *
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "Laboratoire{" + "codeLaboratoire=" + codeLaboratoire + ", nomLaboratoire=" + nomLaboratoire + ", chefDeVente=" + chefDeVente + '}';
+    }
 }
